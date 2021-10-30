@@ -20,7 +20,6 @@ createRandomList(5)
 # I want you to create a function that will Generate a Random List.
 
 # But I want the values passed in to range between 20 - 40 specifically do not include the 40.
-import random
 
 def createRandomRange(num):
     li = []
@@ -29,7 +28,6 @@ def createRandomRange(num):
     for i in range(num):
         li.append(RandRange)
     print(li)
-    return li
 
 createRandomRange(5)  
 
@@ -40,36 +38,28 @@ createRandomRange(5)
 # Rock Beats Scissors
 # Scissors Cut Paper
 
-# # HINT
-
-# - How can I make a RANDOM Choice between those... Then may be compare that computers choice to the user input....
+# - How can I make a RANDOM Choice between those... Compare computers choice to the user input....
 # - Since the computers choice can be 3 different values, what can you use to store a sequence of values
 # - 3 values is the 3 values, do you know a way to generate a random number between 0 and 3? Will it be inclusive of 3
 
-
-import random
-
-def rockpaperscissors():
-    rock = "rock"
-    paper = "paper"
-    scissors = "scissors"
-    shaq = [{rock},{paper}, {scissors}]
-    computeroptions = [{rock},{paper}, {scissors}]
-    computerguess = random.choice(computeroptions)
-    shaqguess = random.choice(shaq)
-
-    if(shaqguess == {rock} and computerguess == {paper}):
-        print(f"You lose!, {computerguess} beats {shaqguess}")
-    elif(shaqguess == {paper} and computerguess == {scissors}):
-        print(f"You lose!, {computerguess} beats {shaqguess}")
-    elif(shaqguess == {scissors} and computerguess == {rock}):
-        print(f"You lose!, {computerguess} beats {shaqguess}")
-    elif(shaqguess == computerguess):
-        print(" You picked the same thing, start over.")
+def rockpaperscissors(playerchoice):
+    
+    computeroptions = ["rock", "paper", "scissors"]
+    computerchoice = random.choice(computeroptions)
+    
+    if(computerchoice == "paper" and playerchoice == "rock"):
+        print(f"You lose!, {computerchoice} Covers {playerchoice}")
+    
+    elif(computerchoice == "scissors" and playerchoice == "paper"):
+        print(f"You lose!, {computerchoice} Cuts {playerchoice}")
+    
+    elif(computerchoice == "rock") and playerchoice == "scissors":
+        print(f"You lose!, {computerchoice} Beats {playerchoice}")
+    
+    elif(computerchoice == playerchoice):
+        print(" DRAW!!!")
+    
     else:
-        print(f"You win!, {shaqguess} beats {computerguess}")
+        print(f"You win!, {playerchoice} beats {computerchoice}")
         
-
-solution = rockpaperscissors()
-
-print(solution)
+rockpaperscissors(input(f"Enter choice Player :" ))

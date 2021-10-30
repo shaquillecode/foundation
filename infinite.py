@@ -10,15 +10,14 @@ while(j < 15):
 
     j = j + 1 
 
- # Create a While loop that takes a list of integers, and gives the sum of the integers
+# Create a While loop that takes a list of integers, and gives the sum of the integers
 
 sum2 = 0
 k = 0
 
 Thelist = [2, 4, 6, 8]
-length = len(Thelist)
 
-while(k < length):
+while(k < len(Thelist)):
     sum2 = sum2 + Thelist[k]
     k = k + 1
 
@@ -43,14 +42,11 @@ for listItem in MyList:
     sum3 = sum3 + listItem
     
 # Using The Range Method
-length = len(MyList)
-for listItem in range(0, length):
+for listItem in range(0, len(MyList)):
     sum4 = sum4 + MyList[listItem]
-
-
-for counter in range(1,11,3):
-    print(f"I am using iteration number: {counter}")
-
 
 print(sum3)
 print(sum4)
+
+for counter in range(1,11,3):
+    print(f"I am using iteration number: {counter}")

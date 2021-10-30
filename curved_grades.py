@@ -1,10 +1,5 @@
-# #Activity 11.2:
-
-# Now I would like you to write a function that returns to me the average value of the curved exam grades and original grades.
-
 import statistics 
-
-grades = [99, 62, 96, 100, 85, 98, 81, 91, 54, 84]
+# Now I would like you to write a function that returns to me the average value of the curved exam grades and original grades.
 
 def curved_exam_grades(data1):
     stDev = statistics.stdev(data1)
@@ -15,18 +10,16 @@ def curved_exam_grades(data1):
             data1[i] += int(stDev)
     return data1
 
-def averagegrades(dataset):
-    gradelist = [99, 62, 96, 100, 85, 98, 81, 91, 54, 84]
-    meanofgrades = statistics.mean(gradelist)
-    return meanofgrades
+def averagegrades(data2):
+    meanOfGrades = statistics.mean(data2)
+    return meanOfGrades
 
-def averagecurvedgrades(dataset):
-    curvedgradelist = [100, 77, 100, 100, 100, 100, 96, 100, 69, 99]
-    meanofCurved = statistics.mean(curvedgradelist)
-    return meanofCurved
+def averagecurvedgrades(data3):
+    meanOfCurved = statistics.mean(data3)
+    return meanOfCurved
 
-print(grades)
-print(curved_exam_grades(grades))
+print([99, 62, 96, 100, 85, 98, 81, 91, 54, 84])
+print(curved_exam_grades([99, 62, 96, 100, 85, 98, 81, 91, 54, 84]))
 
-print(averagegrades(grades))
-print(averagecurvedgrades(grades))
+print(averagegrades([99, 62, 96, 100, 85, 98, 81, 91, 54, 84]))
+print(averagecurvedgrades(curved_exam_grades([99, 62, 96, 100, 85, 98, 81, 91, 54, 84])))
