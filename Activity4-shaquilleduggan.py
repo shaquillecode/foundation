@@ -1,41 +1,40 @@
-#Variable Name = Variable Value
-
-fname = "Shaquille"
-lname = "Duggan"
-favcolor = "black"
-meal = "fish"
+"""Variable Name = Variable Value"""
+FNAME = "Shaquille"
+LNAME = "Duggan"
+FAV_COLOR = "black"
+MEAL = "fish"
 
 # fstring
-print(f"My name is {fname} My last name is {lname} My favorite color is {favcolor} My favorite food is {meal}")
+print(f"My name is {FNAME} My last name is {LNAME} My favorite color is {FAV_COLOR} My favorite food is {MEAL}")
 
 #Concatenation
-firstname = "Shaquille"
-lastname = "Duggan"
-favcolor2 = "green"
-meal2 = "chocolate"
+FIRSTNAME = "Shaquille"
+LASTNAME= "Duggan"
+FAV_COLOR_2 = "green"
+MEAL2 = "chocolate"
 
-fullname = firstname +" "+ lastname
-print(fullname)
-
-# or
-fullname = firstname + lastname
-print(fullname)
+FULLNAME = FIRSTNAME +" "+ LASTNAME
+print(FULLNAME)
 
 # or
-fullname = f"{firstname} {lastname}"
-print(fullname)
+FULLNAME = FIRSTNAME + LASTNAME
+print(FULLNAME)
+
+# or
+FULLNAME = f"{FIRSTNAME} {LASTNAME}"
+print(FULLNAME)
 
 # Argument by Position
 
-favcolor2 = "green"
-lastname = " Duggan"
-meal2 = "chocolate"
-firstname ="Shaquille"
+FAV_COLOR_2 = "green"
+LASTNAME= " Duggan"
+MEAL2 = "chocolate"
+FIRSTNAME ="Shaquille"
 
-sentence = "My first name is {0} and My last name is {1} and My favorite color is {2} and My favorite food is {3}".format(firstname, lastname, favcolor2, meal2)
-print(sentence)
+SENTENCE = "My first name is {0} and My last name is {1} and My favorite color is {2} and My favorite food is {3}".format(FIRSTNAME, LASTNAME, FAV_COLOR_2, MEAL2)
+print(SENTENCE)
 
 #Argument by name
 
-sentence7 = "My first name is {firstname} and My last name is {lastname} and My favorite color is {favcolor2} and My favorite food is {meal2}".format(firstname = "shaquille", lastname = "duggan", favcolor2 = "green", meal2 = "hot chocolate")
-print(sentence7)
+SENTENCE7 = "My first name is {FIRSTNAME} and My last name is {LASTNAME} and My favorite color is {FAV_COLOR_2} and My favorite food is {MEAL2}".format(FIRSTNAME = "shaquille", LASTNAME= "duggan", FAV_COLOR_2 = "green", MEAL2 = "hot chocolate")
+print(SENTENCE7)

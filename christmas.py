@@ -1,50 +1,53 @@
-# While loops
+'''While loops'''
 
 # Create a While loop that goes through the 12 days of Christmas:
 # Solution 1
-index = 0
-day = 1
-TheTruestLoveofmywholelifeGifts = ["  a Love bird", " a Lion", " a Liger", " a Black panther", " a Elephant", " a Baby Goat", " a Giraffe", " a Silverback Gorilla", " an Anaconda", " a HoneyBadger", " a Pitbull", " a Parrot"]
+INDEX = 0
+DAY = 1
+theTruestLoveofmywholelifeGifts = ["  a Love bird", " a Lion", " a Liger",
+" a Black panther", " a Elephant", " a Baby Goat", " a Giraffe", " a Silverback Gorilla",
+" an Anaconda", " a HoneyBadger", " a Pitbull", " a Parrot"]
 
-while(day < 13):
-    print(f"On the {day} of Christmas, my true love gave to me{TheTruestLoveofmywholelifeGifts [index]}")
-    day = day + 1
-    index = index +1
-    
+while DAY < 13:
+    print(f"On the {DAY} of Christmas,\
+    my true love gave to me{theTruestLoveofmywholelifeGifts [INDEX]}")
+    DAY = DAY + 1
+    INDEX = INDEX +1
+
+# Create a While loop that takes a list of integers, and gives the SUM of the integers
 # Solution 2
-# Create a While loop that takes a list of integers, and gives the sum of the integers
 
-sum = 0
+_SUM = 0
 i = 0
 
 Thelist = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
-while(i < len(Thelist)):
-    sum += Thelist[i]
+while i < len(Thelist):
+    _SUM += Thelist[i]
     i = i + 1
 
-print(sum)
+print(_SUM)
 
 # For Loops
 # 1. 12 days of Christmas using For Loops
 
-for index in range(1,13):
-    print(f" On the {index} of christmas my true love gave to me!")
+for INDEX in range(1,13):
+    print(f" On the {INDEX} of christmas my true love gave to me!")
 
-
-# 2. Referencing a list of any size contaning numbers, return the sum of all those numbers in the List
+# 2. Referencing a list of any size contaning numbers,
+# return the SUM of all those numbers in the List
 
 MyList = [7, 14, 21, 28]
-sum1 = 0
-sum2 = 0
+SUM1 = 0
+SUM2 = 0
 
 for listItem in MyList:
-    sum1 += listItem
-    
+    SUM1 += listItem
+
 # Using The Range Method
-for listItem in range(0, len(MyList)):
-    sum2 += MyList[listItem]
+for listIndex,listItem in enumerate(MyList):
+    SUM2 += MyList[listIndex]
 
 
-print(sum1)
-print(sum2)
+print(SUM1)
+print(SUM2)

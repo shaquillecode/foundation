@@ -1,4 +1,4 @@
-# - In this file I want you to create a Dictionary named car.
+"""- In this file I will create a Dictionary named car."""
 # - The car has a brand, a model, and year.
 # - This dictionary should describe the following object:
 # -1964 Ford Mustang

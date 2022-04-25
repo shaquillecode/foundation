@@ -1,9 +1,10 @@
+'''
 Part 1- Binary digits to Decimal
 00000000    equals 0 in decimal format
 
 10010100   Equals 148 in decimal format
 
-01101111     equals 111 in decimal 
+01101111     equals 111 in decimal
 
 10011001      equals 153 in decimal
 
@@ -37,7 +38,6 @@ Part 2 Decimal to Binary digits
 
 47   is 101111     in binary form
 
-
 1024 is 10000000000 in binary form
 
 674  is  1010100010 in binary form
@@ -52,16 +52,17 @@ Part 2 Decimal to Binary digits
 2020 is 011111100100  in binary form
 
 
-Part 3 Write Pseudocode 
+Part 3 Write Pseudocode
+'''
 
-  #Convert Binary into Decimal
+#Convert Binary into Decimal
 
 #Write Binary digit
 
 #Convert into Decimal digits
 
 
-  #Convert Decimal into Binary
+#Convert Decimal into Binary
 
 #Write Decimal digits
 

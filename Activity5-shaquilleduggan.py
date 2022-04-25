@@ -1,4 +1,4 @@
-#Tuples and Lists
+'''Tuples and Lists'''
 
 #a.
 
@@ -17,13 +17,13 @@ print(len(tuple1)- 1)
 
 tuple2 = ("Ether", "ADA", "Bitc", "algo", True)
 
-ftf = tuple2[3]
+FTF = tuple2[3]
 
-ftb = tuple2[-4]
+FTB = tuple2[-4]
 
-print(ftf)
+print(FTF)
 
-print(ftb)
+print(FTB)
 
 #d.
 

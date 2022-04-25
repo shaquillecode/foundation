@@ -1,25 +1,24 @@
-#Variable Name = Variable Value
+'''Variable NAME = Variable Value'''
+NUM = 5
 
 
-num = 5
+NAME = "Shaquille"
 
 
-name = "Shaquille"
+IS_PYTHON = True
 
 
-isPython = True
-
-
-sentence = "I learned that python uses interpreter which translates just one statement of the program at a time into machine code and Interpreted programs are more memory efficient."
+SENTENCE = "I learned that python uses interpreter which translates \
+just one statement of the program at a time into machine code and Interpreted programs \
+are more memory efficient."
 
 
 #Bonus = Bonus
 
-ShaquilleDuggan = 8
+SHAQ = 8
 
-Num = 7
+NUM = 7
 
-total = Num + ShaquilleDuggan 
+TOTAL = NUM + SHAQ
 
-print(total)
-
+print(TOTAL)

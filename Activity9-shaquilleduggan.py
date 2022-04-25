@@ -1,4 +1,4 @@
-# Write a function that given a list will print out all the values in that list
+'''Write a function that given a list will print out all the values in that list'''
 
 MyList = [7, 14, 21, 28]
 
@@ -19,30 +19,30 @@ for i in range(7):
 # CAN NOT USE the .sort() OR .sorted()
 
 def rearrange(MyList = [37, 1, 26]):
-    # Logic for "MyList[0]" 
+    # Logic for "MyList[0]"
     if(MyList[0] < MyList[1] and MyList[0] < MyList[2]):
-         smallestnum = MyList[0]
+        smallestnum = MyList[0]
     elif (MyList[0] > MyList[1] and MyList[0] > MyList[2]):
-          greatestnum = MyList[0]
+        greatestnum = MyList[0]
     else:
-          middlenum = MyList[0]
+        middlenum = MyList[0]
 
-   # Logic for "MyList[1]"       
+   # Logic for "MyList[1]"
     if(MyList[1] < MyList[0] and MyList[1] < MyList[2]):
-         smallestnum = MyList[1]
+        smallestnum = MyList[1]
     elif (MyList[1] > MyList[0] and MyList[1] > MyList[2]):
-          greatestnum = MyList[1]
+        greatestnum = MyList[1]
     else:
-          middlenum = MyList[1]
+        middlenum = MyList[1]
 
-    # Logic for "MyList[2]" 
+    # Logic for "MyList[2]"
     if(MyList[2] < MyList[1] and MyList[2] < MyList[0]):
-         smallestnum = MyList[2]
+        smallestnum = MyList[2]
     elif (MyList[2] > MyList[1] and MyList[2] > MyList[0]):
-          greatestnum = MyList[2]
+        greatestnum = MyList[2]
     else:
-          middlenum = MyList[2]
-    
+        middlenum = MyList[2]
+
     # Last step
     solution = smallestnum, middlenum, greatestnum
     print(list(solution))
@@ -65,8 +65,6 @@ def is_it_sorted_or_not(MyList):
 The_answer = is_it_sorted_or_not([7, 14, 28])
 print(The_answer)
 
-
-
 # - Write a function that will be passed a String as a parameter
 
 # - Your functions job is determine whether or not the String passed in is a Palindrome using booleans.
@@ -76,16 +74,14 @@ print(The_answer)
 def is_it_a_palindrome_or_not(string):
     og_word = list(string)
     print(og_word)
-    
-    reverseword = og_word.copy()
-    reverseword.reverse()
-    print(reverseword)
-    
 
-    if(og_word == reverseword):
+    reverse_word = og_word.copy()
+    reverse_word.reverse()
+
+    if(og_word == reverse_word):
         return True
     else:
-        return False 
-    
-The_answer = is_it_a_palindrome_or_not("abjhdsj")    
+        return False
+
+The_answer = is_it_a_palindrome_or_not("abjhdsj")
 print(The_answer)

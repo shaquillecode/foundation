@@ -2,9 +2,9 @@
 
 #Put toothpaste on brush
 
-#Put brush in mouth 
+#Put brush in mouth
 
-#move left to right 
+#move left to right
 
 #move up to down
 
@@ -14,12 +14,12 @@
 
 #put two sheets on bed
 
-#spread a sheet on mattress 
+#spread a sheet on mattress
 
 #spread a sheet on top of first sheet
- 
+
 #Tuck first and second sheets under four corners of mattress
- 
+
 
    #Making Cereal for dinner
 
