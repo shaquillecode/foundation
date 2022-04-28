@@ -1,4 +1,4 @@
-'''Tuples and Lists'''
+'''Tuples'''
 
 #a.
 

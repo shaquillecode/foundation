@@ -1,26 +1,27 @@
-"""Write a Program to check the greatest among 3 numbers."""
-a = 1000
-b = 2000
-c = 500
+"""Control Flow"""
+A = 1000
+B = 2000
+C = 500
 
-if (a > b and a > c):
+if (A > B and A > C):
     print(" a is the greatest ")
 
-elif(b > a and b >c):
+elif(B > A and B > C):
     print(" b is the greatest ")
 
 else:
     print("c is the greatest")
 
-# -Write a Program to imitate a Street light.
-Green = True
-Yellow = False
-Red =  False
+# - Write a Program to imitate a Street light.
 
-if Green:
+GREEN = True
+YELLOW = False
+RED =  False
+
+if GREEN:
     print("GO")
 
-elif Yellow:
+elif YELLOW:
     print("Slow down")
 
 else:
@@ -28,21 +29,21 @@ else:
 
 
 # - Without using any built in String or List methods.
-# (Do not use the .sort() or .sorted() method)
-# Create a function that takes in 3 integers as parameters. Perform some operations that will compare these values and order the numbers from least to greatest.
+# - (Do not use the .sort() or .sorted() method)
+# - Create a function that takes in 3 integers as parameters.
+# - Order the numbers from least to greatest.
 # - Return these values as a set in a tuple.
-# - Remember to check the data type of the value you are returning. Your function assumes that data type.
+# - Check the data type of the value you are returning.
+# - Your function assumes that data type.
 
-# Whenever you are solving a programming problem. Think about IPO.
-# Not Initial public offering, which is where companies sell shares for cheap.
-# INPUT PROCESS OUTPUT
+# When solving a programming problem.
+# INPUT PROCESS OUTPUT (IPO)
 # What am I given?(Input)
 # What needs to be done?(Process)
 # What needs to be given back?
 
-
-def SortThree(num1, num2, num3):
-    # Logic for least to greatest
+def sort_three(num1, num2, num3):
+    '''Logic for least to greatest'''
     smallestnum = 0
     middlenum = 0
     greatestnum = 0
@@ -76,9 +77,9 @@ def SortThree(num1, num2, num3):
     solution = (smallestnum, middlenum, greatestnum)
 
     print(type(solution))
-    return(solution)
+    return solution
 
-print(SortThree(2000, 40000, 2))
+print(sort_three(2000, 40000, 2))
 
-length = len(SortThree(2000, 40000, 2))
-print(length)
+LENGTH = len(sort_three(2000, 40000, 2))
+print(LENGTH)
