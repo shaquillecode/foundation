@@ -82,7 +82,7 @@ print()
 # dealing with matrices... or 2-Dimensional Lists.... OR, a list of lists...
 
 #Nested Loops
-li = [["Bitcoin", "Etherium"],["Tesla", "NIO"], ["Elvis", "Shaquille"], ["Blue", "Red"]]
+li = [["Bitcoin", "Ethereum"],["Tesla", "NIO"], ["Elvis", "Shaquille"], ["Blue", "Red"]]
 
 NAME = li[2][1]
 print(NAME)

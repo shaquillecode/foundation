@@ -1,4 +1,5 @@
-'''File Manipulatiom'''
+'''File Manipulation'''
+
 #A file is an object on a computer that stores data,
 #Information, settings, and/or commands used with a computer program
 
@@ -21,15 +22,17 @@
 234.98 -> That is stored as 6 characters
 '''
 
-#Python can do with files. Starting with OPENING one:
+#Python can do a lot with files.
+
+# Starting with OPENING one:
 
 #Python has a built in method called "open()"
 
 #Example:
+
 '''
 myFile = open(<file_name>, <open_mode>)
 '''
-
 
 '''
 #1. What is <open_mode>?
@@ -38,7 +41,6 @@ myFile = open(<file_name>, <open_mode>)
 #4. Open is a method?
 #5. myFile is the variable storing the newly opened file object?
 '''
-
 
 '''
 #1. <open_mode> is referring to a character code that grants different privelages to the file that you are currently creating. The different <open_mode>'s are:
@@ -55,9 +57,8 @@ myFile = open(<file_name>, <open_mode>)
 #5. myFile indeed is the variable name, and it is assigned the value of the open method with two parameters of "<file_name> <open_mode>"
 '''
 
-
-myFile = open("Shaquille.txt", "x")
-myFile2 = open("Shaquille2.txt", "x")
-myFile3 = open("Shaquille3.txt", "w")
-myFile3.write("Whatchu mean ")
+myFile = open("old_housing.txt", "x")
+myFile2 = open("new_housing.txt", "x")
+myFile3 = open("moving.txt", "w")
+myFile3.write("Whatchu mean, I am ready to move you know what I am saying? ")
 myFile3.write("The previous information gets overwritten")
